@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles/style.css" media="all">
+  <link rel="stylesheet" href="styles/mediaquery.css" media="screen and (min-width: 768px)">
   <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+  <form id="container">
+    <div id="day" class="date">
+      <label for="iday">DAY</label> <br> <input type="number" name="nday" id="iday" placeholder="DD" required>
+    </div>
+    <div id="month" class="date">
+      <label for="imonth">MONTH</label> <br> <input type="number" name="nmonth" id="imonth" placeholder="MM" required>
+    </div>
+    <div id="year" class="date">
+      <label for="iyear"></label>YEAR</label> <br> <input type="number" name="nyear" id="iyear" placeholder="YYYY" required>
+    </div>
+    <div id="buttonres">
+      <button type="submit">
+      <img src="assets/images/icon-arrow.svg" alt="Confirm Button">
+      </button>
+      <hr>
+    </div>
+    <div id="result">
+      <p><strong>--</strong> <i>years</i></p>
+      <p><strong>--</strong> <i>months</i></p>
+      <p><strong>--</strong> <i>days</i></p>
+    </div>
+  </form>
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="external">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/JeffDev-play" target="_blank" rel="external">JeffDev</a>.
   </div>
+  <script src="scripts/datefunc.js"></script>
 </body>
 </html>

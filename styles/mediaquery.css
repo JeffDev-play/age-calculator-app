@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+form#container {
+    width: 600px;
+    transition: width 1s;
+}
+
+div#buttonres > button {
+    transform: translate(330%, -80%);
+    transition: transform 0.8s;
+}
+
+div#result > p {
+    font-size: 4.5em;
+    transition: font-size 0.5s;
+}
