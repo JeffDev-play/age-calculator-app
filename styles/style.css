@@ -5,20 +5,24 @@ body {
    background-color: hsl(0, 0%, 94%);
 }
 
-form#container {
+div#container {
   background-color: white;
   border-radius: 25px 25px 90px 30px;
   padding: 30px;
   padding-top: 45px;
-  width: 420px;
+  width: 380px;
   margin: auto;
   margin-top: 80px;
   transition: width 1s;
 }
 
+div#form {
+  display: flex;
+}
+
 div.date {
-  display: inline-block;
   margin-right: 10px;
+  width: 130px;
   color: hsl(0, 1%, 44%);
   font-family: 'Poppins';
   font-weight: bold;

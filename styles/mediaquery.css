@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-form#container {
+div#container {
     width: 600px;
     transition: width 1s;
 }
