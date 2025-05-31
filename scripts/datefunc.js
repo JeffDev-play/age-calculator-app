@@ -65,7 +65,7 @@ function age()
           document.querySelector('div#month label').style.color = '#ff9999'
        }
 
-       if (Number(year.value) < 1900 || Number(year.value) > currentDate.getFullYear() || (Number(month.value) > currentDate.getMonth() + 1 && Number(day.value) > currentDate.getDay()))
+       if (Number(year.value) < 1900 || Number(year.value) > currentDate.getFullYear() || (Number(month.value) > currentDate.getMonth() + 1 && Number(year.value) === currentDate.getFullYear()))
        {
           temErro = true
           erroYear.innerHTML = 'Invalid year'
