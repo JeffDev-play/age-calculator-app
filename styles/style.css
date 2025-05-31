@@ -10,7 +10,7 @@ div#container {
   border-radius: 25px 25px 90px 30px;
   padding: 30px;
   padding-top: 45px;
-  width: 380px;
+  width: 320px;  /* 380  */
   margin: auto;
   margin-top: 80px;
   transition: width 1s;
